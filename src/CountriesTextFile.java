@@ -9,8 +9,8 @@ import java.util.Scanner;
  */
 public class CountriesTextFile {
 
-    public static void ReadFromFile(String filename) {
-        Path filePath = Paths.get(filename);
+    public static void ReadFromFile(String dir, String filename) {
+        Path filePath = Paths.get(dir, filename);
         File textFile = filePath.toFile();
 
         try {
@@ -32,8 +32,8 @@ public class CountriesTextFile {
         }
     }
 
-    public static void WriteToFile(Scanner s, String fileName) {
-        Path testPath = Paths.get(fileName);
+    public static void WriteToFile(Scanner s,String dir, String fileName) {
+        Path testPath = Paths.get(dir, fileName);
         File testFiles = testPath.toFile();
         System.out.println("Enter a Country");
         String ourString = s.nextLine();

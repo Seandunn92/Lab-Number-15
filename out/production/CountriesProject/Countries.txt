@@ -1,3 +1,9 @@
 United States
 Canada
 Mexico
+SeanState
+NickState
+Iraq
+Iran
+Greece
+France
